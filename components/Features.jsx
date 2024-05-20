@@ -1,11 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { FaRegClipboard } from "react-icons/fa";
 import { IoIosBicycle } from "react-icons/io";
+import { motion, useInView } from "framer-motion";
 
 const Features = () => {
-  return (
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
+  return (
     <div className="my-[7rem] flex flex-col items-center">
       <div className=" flex lg:flex-row flex-col w-[90%] lg:w-[77%]">
         <div className=" lg:w-[50%]">
@@ -16,9 +19,151 @@ const Features = () => {
             </p>
           </div>
           <div>
-            <h1 className="lg:text-[40px] text-[30px]  lg:font-serif font-bold ">
-              We are the best agency to improve your deals.
-            </h1>
+            <div className="lg:text-[40px] text-[28px]  lg:font-serif font-bold ">
+              <div className=" flex gap-3">
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 0.5, delay: 0 }}
+                >
+                  {" "}
+                  We
+                </motion.h1>
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                >
+                  {" "}
+                  are
+                </motion.h1>
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 0.9, delay: 0.5 }}
+                >
+                  the
+                </motion.h1>
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 1.1, delay: 0.7 }}
+                >
+                  {" "}
+                  best
+                </motion.h1>
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 1.3, delay: 0.9 }}
+                >
+                  gency
+                </motion.h1>
+
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 1.5, delay: 1.1 }}
+                >
+                  to
+                </motion.h1>
+              </div>
+              <div className=" flex gap-3">
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 1.7, delay: 1.3 }}
+                >
+                  improve
+                </motion.h1>
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 1.8, delay: 1.5 }}
+                >
+                  your
+                </motion.h1>
+                <motion.h1
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{ duration: 1.9, delay: 1.7 }}
+                >
+                  deals.
+                </motion.h1>
+              </div>
+            </div>
           </div>
         </div>
         <div className=" lg:w-[50%]">

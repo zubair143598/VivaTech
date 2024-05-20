@@ -6,7 +6,6 @@ import { useRef } from "react";
 const Message = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  
 
   return (
     <div className=" flex  justify-center my-10">
@@ -19,26 +18,42 @@ const Message = () => {
             </h3>
           </div>
           <div className=" mt-3">
-            <h5 className=" uppercase text-[26px] font-bold">
-              {" "}
-              <motion.span
+            <div className=" flex gap-2">
+              <motion.h5
                 ref={ref}
-                initial={{ y: 50, opacity: 0 }}
-                animate={isInView ? { y: 0, opacity: 1 } : {}}
-                transition={{ duration: 1 }}
+                initial={{
+                  y: 50,
+                  opacity: 0,
+                }}
+                animate={
+                  isInView
+                    ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                    : {}
+                }
+                transition={{ duration: 0.5, delay: 0 }}
+                className="uppercase text-[26px] font-bold"
               >
                 Hikmat
-              </motion.span>{" "}
-              <motion.span
+              </motion.h5>
+
+              <motion.h5
                 ref={ref}
-                initial={{ y: 50, opacity: 0 }}
-                animate={isInView ? { y: 0, opacity: 1 } : {}}
-                transition={{ duration: 2 }}
+                initial={{
+                  y: 50,
+                  opacity: 0,
+                }}
+                animate={
+                  isInView
+                    ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                    : {}
+                }
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="uppercase text-[26px] font-bold"
               >
+                {" "}
                 Ullah
-              </motion.span>{" "}
-              
-            </h5>
+              </motion.h5>
+            </div>
             <p className="mt-6 text-[18px] lg:text-[20px]">
               I believe that the work done from a sincere heart with
               determination would be blessed by God and a distinguished career.
