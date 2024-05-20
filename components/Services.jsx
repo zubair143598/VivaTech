@@ -100,7 +100,7 @@ const Services = () => {
               <div
                 onMouseEnter={() => handleFlip(index)}
                 onMouseLeave={() => handleFlip(index)}
-                className={`py-10 bg-white w-[21rem] lg:w-[25.6rem] h-[18.7rem]  gap-y-6 flex flex-col items-center ${index === 1 ? "lg:-translate-y-4" : ""} ${index === 4 ? "lg:-translate-y-8" : ""}`}
+                className={`py-10 bg-white  h-full gap-y-6 flex flex-col items-center ${index === 1 ? "lg:-translate-y-4" : ""} ${index === 4 ? "lg:-translate-y-8" : ""}`}
               >
                 <h6 className="font-serif text-[22px] text-center font-bold">
                   {work.title} Flipped
