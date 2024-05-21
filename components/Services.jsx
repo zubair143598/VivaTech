@@ -93,7 +93,7 @@ const Services = () => {
                     <div className={` relative w-full h-full ${index===1 ?" lg:-translate-y-4":""} ${index===4 ?" lg:-translate-y-8":""}`} onMouseEnter={(e) => e.currentTarget.classList.add("flipped")} onMouseLeave={(e) => e.currentTarget.classList.remove("flipped")}>
                       {/* Front of the card */}
                       <div className=" flip-card-front bg-white w-full h-full flex flex-col items-center justify-center gap-y-6 py-10">
-                        <span className="bg-red p-5 rounded-full">{work.icon}</span>
+                        <span className="bg-red text-white p-5 rounded-full">{work.icon}</span>
                         <h6 className="font-serif text-[22px] text-center font-bold">{work.title}</h6>
                         <p className="text-[16px] px-8 text-center">{work.Description}</p>
                       </div>
