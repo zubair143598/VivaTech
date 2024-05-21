@@ -19,7 +19,7 @@ const Footer = () => {
           <li>
             <img className=" w-[150px]" src="./assets/logo.png" alt="logo" />
           </li>
-          <li className="text-[#9D9D9D] py-8  text-[20px]">We focus on quality rather than quantity.</li>
+          <li className="text-[#9D9D9D] py-8  text-[20px]"> Quality over quantity is our priority.</li>
           <li>
             <button className=" hover:transition-colors transition-colors hover:duration-1000 px-4 py-2 text-[18px] uppercase font-semibold hover:bg-white hover:text-black bg-red">About us</button>
           </li>
@@ -34,17 +34,38 @@ const Footer = () => {
           </li>
 
           <li>
-            <p className=" text-[#9D9D9D] flex text-[16px]">
+            <p className=" text-[#9D9D9D]  flex text-[16px]">
             
               <FaLocationDot className=" mt-1 me-4 text-red" />
-              Morgah Mor, near Ayyob Park, Rawalpindi, 46000, Pakistan
+              Office No. 9N, Alaseel Plaza, I10 Markaz, Islamabad
             </p>
           </li>
           <li className=" my-3">
             <p className=" flex text-[16px]">
               {" "}
               <FaPhone className="mt-1 me-4 text-red" />
-              +923369528075
+              0514430962
+            </p>
+          </li>
+          <li>
+            <p className=" text-white">Head Office</p>
+            <p className=" text-[#9D9D9D]  flex text-[16px]">
+            
+              <FaLocationDot className=" mt-1 me-4 text-red" size={20} />
+              P.O. Box: 94484, Mussaffah, Industrial Area-M-32/1 - Abu Dhabi, U.A.E
+            </p>
+          </li>
+          <li className=" my-3">
+            <p className=" flex text-[16px]">
+              {" "}
+              <FaPhone className="mt-1 me-4 text-red" />
+              +971 2 551 4991 <br /> Fax : +971 2 551 4997
+            </p>
+          </li>
+          <li className=" my-3">
+            <p className=" flex text-[16px]">
+              
+            Email: info@vivagroupuae.com
             </p>
           </li>
           <li className="text-white font-semibold  "> <span className="border-b-2">Open Hours:</span></li>

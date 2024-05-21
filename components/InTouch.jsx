@@ -15,18 +15,13 @@ const InTouch = () => {
           <div>
             <h2 className=" font-bold text-[34px] lg:text-[40px]">ABOUT US</h2>
             <p className="text-[20px] lg:pe-5 mt-10">
-              Devsky was founded in 2019 in a partnership with Funsol. We create
-              cutting-edge mobile applications for sophisticated users. We only
-              make use of excellent UI and UX. Join us for the most recent
-              features and improvements. We are concentrating on gaining
-              traction and accelerating growth in our core businesses.
+            VivaTech Solutions Pvt Ltd, founded in 2017, is a Dubai-based company specializing in cutting-edge mobile applications, digital marketing, web development, ASO, and app development. We prioritize top-tier UI and UX design, ensuring the best experience for our users. Explore our latest features and enhancements as we focus on expanding our core businesses and driving rapid growth.
             </p>
           </div>
         </div>
         <div>
           <p className="text-[20px] mt-10 lg:mt-0 pe-4">
-            We understand the importance of approaching each work integrally and
-            believe in the power of simple and easy communication
+          We value simplicity and effective communication in all our endeavors
           </p>
           <h2 className=" lg:text-[36px] text-[26px] mt-12  font-semibold">
             Book an Appointment
@@ -45,7 +40,7 @@ const InTouch = () => {
                   id="Name"
                 />
               </div>
-              <div className="mt-4">
+              <div className=" lg:mt-0 mt-4">
                 <label htmlFor="email">Mail address*</label>
                 <br />
                 <input

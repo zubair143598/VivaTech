@@ -51,27 +51,20 @@ const Message = () => {
                 className="uppercase text-[26px] font-bold"
               >
                 {" "}
-                Ullah
+                Bazid
               </motion.h5>
             </div>
             <p className="mt-6 text-[18px] lg:text-[20px]">
-              I believe that the work done from a sincere heart with
-              determination would be blessed by God and a distinguished career.
-              Efficient workers pride themselves on making effective use of
-              their time.
+            I believe that work carried out with sincerity and determination is blessed and leads to a distinguished career. Efficient workers take pride in making the most effective use of their time.
+
+              
             </p>
             <p className="mt-3 text-[18px] lg:text-[20px]">
-              Family-oriented company culture also gives employees the freedom
-              to share their ideas and opinions and encourages active
-              discussions on various topics that might concern most people in
-              the workplace. Positive attitudes can make the work environment
-              happy and a joy to be in. I would happily take an office full of
-              positive attitudes over negative ones, without a doubt.
+            A family-oriented company culture allows employees to freely share ideas and opinions, fostering active discussions on topics relevant to the workplace. Positive attitudes create a joyful and productive work environment, and I would always choose an office full of positivity over negativity.
+
             </p>
             <p className="mt-3 text-[18px] lg:text-[20px]">
-              The success of the Company depends on your commitment and
-              teamwork, which would undoubtedly ensure that we provide the
-              highest level of service needed to be the best in our business.
+            The success of the company relies on your commitment and teamwork, which are essential for delivering the highest level of service and achieving excellence in our business.
             </p>
           </div>
         </div>
