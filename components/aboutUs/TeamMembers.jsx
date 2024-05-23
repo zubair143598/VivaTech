@@ -50,7 +50,7 @@ const TeamMembers = () => {
         </h3>
       </div>
 
-      <div className=" py-[64px] lg:w-[80%] mx-auto">
+      <div className=" py-[64px] lg:w-[65%] mx-auto">
         <div className=" grid gap-10 grid-cols-1 px-3 lg:px-0 lg:grid-cols-4 ">
           {teamMembers.map((member, index) => {
             return (

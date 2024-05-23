@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" card lg:px-0 px-4 h-[27rem]  relative">
+    <div className=" card lg:px-0 px-4 h-[23rem]  relative">
       <div className="text-white z-50  top-[40%]  lg:left-[40%] lg:w-[35%]  absolute">
         <h1 className=" lg:text-[60px] text-[40px] font-bold font-serif">Gallery</h1>
         <div className=" ">

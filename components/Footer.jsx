@@ -13,7 +13,7 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer_bg text-white">
-    <div className=" grid grid-cols-1 lg:grid-cols-4 py-[84px] px-4 lg:px-[12rem]">
+    <div className=" grid grid-cols-1 lg:grid-cols-4 pt-[54px] px-4 lg:px-[12rem]">
       <div>
         <ul className=" ">
           <li>

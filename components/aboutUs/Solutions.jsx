@@ -3,7 +3,7 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 
 const Solutions = () => {
   return (
-    <div className=" lg:w-[80%] lg:ps-0 ps-3 mx-auto mt-[7rem]">
+    <div className=" lg:w-[80%] lg:ps-0 ps-3 mx-auto mt-[9rem]">
       <div className=" grid grid-cols-1 lg:grid-cols-2">
         <div>
           <div className="  flex">

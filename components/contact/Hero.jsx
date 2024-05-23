@@ -6,7 +6,7 @@ const Hero = () => {
     <div className=" card lg:px-0 px-4 h-[23rem]  relative">
       <div className="text-white z-50  top-[40%]  lg:left-[40%] lg:w-[35%]  absolute">
         <h1 className=" lg:text-[60px] text-[40px] font-bold font-serif">
-          Career
+          Contact Us
         </h1>
         <div className=" ">
           <ul className=" flex lg:ms-16 space-x-3">
@@ -19,7 +19,7 @@ const Hero = () => {
               </Link>
             </li>
 
-            <li>Career</li>
+            <li>Contact Us</li>
           </ul>
         </div>
       </div>

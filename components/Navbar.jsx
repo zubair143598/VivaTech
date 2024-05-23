@@ -37,34 +37,34 @@ const Navbar = () => {
 
   const getLinkClass = (path) => {
     return activePath === path
-      ? "bg-red px-4 "
-      : "text-white px-4 hover:bg-red";
+      ? "bg-red px-8"
+      : "text-white px-8 hover:bg-red";
   };
 
   return (
     <>
       {/* Section 1: Text and Social Links */}
-      <div className="bg-[#636363]  text-white py-4 hidden lg:block">
-        <div className="container mx-auto w-[80%] flex justify-between items-center">
-          <div className="text-sm">
+      <div className="bg-[#636363]  text-white py-3 hidden lg:block">
+        <div className="container mx-auto w-[77%] flex justify-between items-center">
+          <div className="text-[12px]">
             Top notch mobile apps development company
           </div>
           <div className="flex space-x-3">
             <Link href="#" className="hover:text-gray-400">
-              <FaFacebookF />
+              <FaFacebookF size={12} />
             </Link>
             <Link href="#" className="hover:text-gray-400">
-              <FaTwitter />
+              <FaTwitter size={12}/>
             </Link>
             <Link href="#" className="hover:text-gray-400">
-              <FaLinkedinIn />
+              <FaLinkedinIn size={12}/>
             </Link>
           </div>
         </div>
       </div>
 
       {/* Section 2: Logo, Address, Mail, and Location */}
-      <div className=" w-[80%] mx-auto  py-2 hidden lg:block">
+      <div className=" w-[80%] mx-auto  pt-2 hidden lg:block">
         <div className="container mx-auto flex justify-between items-end">
           <Link href="#" className="text-2xl font-bold">
             <img
@@ -73,36 +73,36 @@ const Navbar = () => {
               alt="logo"
             />
           </Link>
-          <div className="hidden lg:flex space-x-5">
+          <div className="hidden lg:flex ">
             {/* phone */}
-            <div className="flex  border-r-2 px-4 border-dashed items-center space-x-2">
+            <div className="flex  border-r-2 px-6  border-dashed items-center space-x-2">
               <div className=" ">
-              <FiPhoneCall  className=" text-red" size={40} />
+              <FiPhoneCall  className="  text-red" size={35} />
               </div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">For Any query</p>
-                <span className=" text-[20px] font-bold">+92 514430962</span>
+                <span className=" text-[19px] font-semibold">+92 514430962</span>
               </div>
             </div>
             {/* mail */}
 
-            <div className="flex  border-r-2 px-8 border-dashed items-center space-x-2">
+            <div className="flex px-6  border-r-2  border-dashed items-center space-x-2">
               <div className=" ">
-              <FiMail   className=" text-red" size={40} />
+              <FiMail   className=" text-red" size={35} />
               </div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">hrvivatech@gmail.com</p>
-                <span className=" text-[20px] font-bold">Mail us</span>
+                <span className=" text-[19px] font-serif font-bold">Mail us</span>
               </div>
             </div>
             {/* Location */}
-            <div className="flex   px-8  items-center space-x-2">
+            <div className="flex px-6 items-center space-x-2">
               <div className=" ">
               <CiLocationOn    className=" text-red" size={40} />
               </div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">Office No. 9N, Alaseel Plaza, I10 Markaz, Islamabad</p>
-                <p className=" text-[20px] font-bold">Pakistan</p>
+                <p className=" text-[19px] font-bold font-serif">Pakistan</p>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
           <button className="lg:hidden" onClick={toggleDrawer}>
             <FaBars className=" text-white bg-red rounded px-2" size={40} />
           </button>
-          <div className="hidden text-white leading-[64px] text-[18px] font-medium lg:flex space-x-10">
+          <div className="hidden text-white leading-[64px] text-[16px] font-medium lg:flex ">
             <Link
               href="/"
               className={getLinkClass("/")}
@@ -159,9 +159,9 @@ const Navbar = () => {
               Career
             </Link>
             <Link
-              href="/contact"
-              className={getLinkClass("/contact")}
-              onClick={() => handleLinkClick("/contact")}
+              href="/Contact"
+              className={getLinkClass("/Contact")}
+              onClick={() => handleLinkClick("/Contact")}
             >
               Contact Us
             </Link>
@@ -221,16 +221,16 @@ const Navbar = () => {
             Life At Viva
           </Link>
           <Link
-            href="/career"
-            className={getLinkClass("/career")}
-            onClick={() => handleLinkClick("/career")}
+            href="/Career"
+            className={getLinkClass("/Career")}
+            onClick={() => handleLinkClick("/Career")}
           >
             Career
           </Link>
           <Link
             href="/contact"
-            className={getLinkClass("/contact")}
-            onClick={() => handleLinkClick("/contact")}
+            className={getLinkClass("/Contact")}
+            onClick={() => handleLinkClick("/Contact")}
           >
             Contact Us
           </Link>
