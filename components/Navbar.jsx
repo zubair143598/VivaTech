@@ -73,9 +73,9 @@ const Navbar = () => {
               alt="logo"
             />
           </Link>
-          <div className="hidden lg:flex space-x-10">
+          <div className="hidden lg:flex space-x-5">
             {/* phone */}
-            <div className="flex  border-r-2 px-12 border-dashed items-center space-x-2">
+            <div className="flex  border-r-2 px-4 border-dashed items-center space-x-2">
               <div className=" ">
               <FiPhoneCall  className=" text-red" size={40} />
               </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
             </div>
             {/* mail */}
 
-            <div className="flex  border-r-2 px-12 border-dashed items-center space-x-2">
+            <div className="flex  border-r-2 px-8 border-dashed items-center space-x-2">
               <div className=" ">
               <FiMail   className=" text-red" size={40} />
               </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
               </div>
             </div>
             {/* Location */}
-            <div className="flex   px-12  items-center space-x-2">
+            <div className="flex   px-8  items-center space-x-2">
               <div className=" ">
               <CiLocationOn    className=" text-red" size={40} />
               </div>
