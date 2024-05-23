@@ -77,11 +77,12 @@ const Services = () => {
         </div>
         <div className=" flex items-center gap-y-4 mb-10 text-center flex-col">
           <h2 className=" text-[32px] lg:text-[40px] lg:font-serif font-extrabold">
-            We help to get Solutions!
+            We provide comprehensive solutions!
           </h2>
-          <p className="font-serif lg:text-[20px] text-[18px] lg:w-[35%] ms-5">
-            Provide users with appropriate view and access permissions to
-            requests, problems, changes, contracts, assets, solutions
+          <p className="font-serif lg:text-[20px] text-[18px] lg:w-[45%] ms-5">
+            Our services ensure that users have the appropriate view and access
+            permissions to manage requests, problems, changes, contracts,
+            assets, and solutions efficiently.
           </p>
         </div>
         <div className=" flex justify-center">
@@ -90,21 +91,46 @@ const Services = () => {
               return (
                 <Flipper flipKey={index} className="w-full h-full">
                   <Flipped flipId="card">
-                    <div className={` relative w-full h-full ${index===1 ?" lg:-translate-y-4":""} ${index===4 ?" lg:-translate-y-8":""}`} onMouseEnter={(e) => e.currentTarget.classList.add("flipped")} onMouseLeave={(e) => e.currentTarget.classList.remove("flipped")}>
+                    <div
+                      className={` relative w-full h-full ${
+                        index === 1 ? " lg:-translate-y-4" : ""
+                      } ${index === 4 ? " lg:-translate-y-8" : ""}`}
+                      onMouseEnter={(e) =>
+                        e.currentTarget.classList.add("flipped")
+                      }
+                      onMouseLeave={(e) =>
+                        e.currentTarget.classList.remove("flipped")
+                      }
+                    >
                       {/* Front of the card */}
                       <div className=" flip-card-front bg-white w-full h-full flex flex-col items-center justify-center gap-y-6 py-10">
-                        <span className="bg-red text-white p-5 rounded-full">{work.icon}</span>
-                        <h6 className="font-serif text-[22px] text-center font-bold">{work.title}</h6>
-                        <p className="text-[16px] px-8 text-center">{work.Description}</p>
+                        <span className="bg-red text-white p-5 rounded-full">
+                          {work.icon}
+                        </span>
+                        <h6 className="font-serif text-[22px] text-center font-bold">
+                          {work.title}
+                        </h6>
+                        <p className="text-[16px] px-8 text-center">
+                          {work.Description}
+                        </p>
                       </div>
                       {/* Back of the card */}
                       <div className=" card flip-card-back absolute top-0 left-0 bg-white w-full h-full flex flex-col  justify-center gap-y-6 py-10 px-7 text-white">
                         <div className=" gap-x-4 flex justify-start">
-                          <span className="bg-red text-white p-5 rounded-full">{work.icon}</span>
-                          <h6 className="font-serif mt-6 text-[22px] font-bold">{work.title}</h6>
+                          <span className="bg-red text-white p-5 rounded-full">
+                            {work.icon}
+                          </span>
+                          <h6 className="font-serif mt-6 text-[22px] font-bold">
+                            {work.title}
+                          </h6>
                         </div>
                         <p className="text-[16px]">{work.description2}</p>
-                        <Link className=" py-4 w-[10rem] text-center text-[18px] font-bold bg-red text-white" href={work.readMore}>Read More</Link>
+                        <Link
+                          className=" py-4 w-[10rem] text-center text-[18px] font-bold bg-red text-white"
+                          href={work.readMore}
+                        >
+                          Read More
+                        </Link>
                       </div>
                     </div>
                   </Flipped>

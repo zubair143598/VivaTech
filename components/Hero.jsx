@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+
 
 
 const Hero = () => {
   return (
-    <div className=' hero lg:h-[49rem] h-[40rem] relative'>
+    <div className=' hero  lg:h-[49rem] h-[40rem] relative'>
       <div className='text-white   top-[8rem] lg:right-[200px] lg:w-[35%]  absolute'>
         <div className=' flex '>
         <hr className='lg:block hidden bg-red mt-3 h-[3px] border-none w-[80px]' />

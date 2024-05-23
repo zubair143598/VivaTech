@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import InTouch from "@/components/InTouch";
 import MainNavbar from "@/components/MainNavbar";
 import Message from "@/components/Message";
+import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Head from "next/head";
 
@@ -18,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <MainNavbar/>
+        {/* <MainNavbar/> */}
        <Hero/>
        <Features/>
        <Services/>

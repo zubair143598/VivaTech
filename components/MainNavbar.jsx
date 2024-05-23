@@ -32,7 +32,7 @@ const MainNavbar = () => {
       <div className="  w-[100%] ">
         <Navbar className="bg-black text-white border-0  py-2 rounded-none px-4 lg:px-8 ">
           <div className=" items-center  ">
-            <div className="flex  lg:mb-0 lg:mt-0 justify-between flex-row-reverse  lg:flex-row lg:items-center lg:gap-6 items-center ">
+            <div className="flex  lg:mb-0 lg:mt-0 justify-between flex-row-reverse  lg:flex-row lg:items-center  items-center ">
               <Typography
                 as="li"
                 className=" block lg:mt-0 cursor-pointer  font-medium"
@@ -72,7 +72,7 @@ const MainNavbar = () => {
                 //    hidden lg:block text-[18px] xl:text-[20px] font-medium`}
                 >
                   <Link
-                    className="hover:text-[red] items-center"
+                    className="hover:bg-[red]  p-[2rem] items-center"
                     href={link.href}
                     passHref
                   >
@@ -156,7 +156,7 @@ const MainNavbar = () => {
                 as="li"
                 variant="small"
                 color="black"
-                className="p-1 lg:hidden block text-[18px] xl:text-[20px] font-medium"
+                className="hover:bg-[red]  p-[1rem] lg:hidden block text-[18px] xl:text-[20px] font-medium"
               >
                 <Link
                 className=" text-white"

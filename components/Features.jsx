@@ -184,7 +184,7 @@ const Features = () => {
             className="rounded-2xl "
             alt=""
             />
-          <div className="absolute bottom-[0px] lg:bottom-[-60px] text-black group-hover:text-white bg-white rounded-full p-4 lg:p-8 right-[39%] group-hover:bg-red transition-all duration-500">
+          <div className="absolute bottom-[-40px] lg:bottom-[-60px] text-black group-hover:text-white bg-white rounded-full p-4 lg:p-8 right-[39%] group-hover:bg-red transition-all duration-500">
             <FaRegClipboard className="p-1" size={50} />
           </div>
             </div>
@@ -193,8 +193,7 @@ const Features = () => {
               Our Mission
             </p>
             <p className="text-center px-3 lg:text-[18px]">
-              Help the app user to supply them best neighborly portable
-              applications for their everyday ease.
+            Our mission is to provide users with top-quality, user-friendly mobile applications that enhance their daily lives and simplify everyday tasks.
             </p>
           </div>
         </div>
@@ -208,18 +207,16 @@ const Features = () => {
             className="rounded-2xl"
             alt=""
             />
-          <div className="absolute bottom-[0px] lg:bottom-[-60px] text-black group-hover:text-white bg-white rounded-full p-4 lg:p-8 right-[39%] group-hover:bg-red transition-all duration-500">
+          <div className="absolute bottom-[-40px] lg:bottom-[-60px] text-black group-hover:text-white bg-white rounded-full p-4 lg:p-8 right-[39%] group-hover:bg-red transition-all duration-500">
             <IoIosBicycle className="" size={60} />
           </div>
             </div>
           <div className="absolute bottom-5 w-full">
             <p className="text-center mt-[5rem] text-[21px] lg:text-[24px] font-semibold">
-              Our Mission
+              Our Vision
             </p>
             <p className="text-center px-3 lg:text-[18px]">
-              By providing high-value products and services that are driven by
-              the market, we are excelling at making technology user-friendly,
-              directing and inspiring the team to work toward our goal.
+            We are committed to excelling in making technology user-friendly through the provision of high-value, market-driven products and services. Our dedicated team is inspired and guided to work towards this goal, ensuring that we consistently meet and exceed our customers' expectations.
             </p>
           </div>
         </div>
