@@ -81,7 +81,7 @@ const Navbar = () => {
               </div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">For Any query</p>
-                <span className=" text-[19px] font-semibold">+92 514430962</span>
+                <span className=" xl:text-[19px] text-[14px] font-semibold">+92514430962</span>
               </div>
             </div>
             {/* mail */}
@@ -92,7 +92,7 @@ const Navbar = () => {
               </div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">hrvivatech@gmail.com</p>
-                <span className=" text-[19px] font-serif font-bold">Mail us</span>
+                <span className=" xl:text-[19px] text-[14px] font-serif font-bold">Mail us</span>
               </div>
             </div>
             {/* Location */}
@@ -102,7 +102,7 @@ const Navbar = () => {
               </div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">Office No. 9N, Alaseel Plaza, I10 Markaz, Islamabad</p>
-                <p className=" text-[19px] font-bold font-serif">Pakistan</p>
+                <p className=" xl:text-[19px] text-[14px] font-bold font-serif">Pakistan</p>
               </div>
             </div>
           </div>

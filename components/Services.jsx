@@ -86,7 +86,7 @@ const Services = () => {
           </p>
         </div>
         <div className=" flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-3 w-[90%] lg:w-[77%]  place-items-center  gap-y-6 gap-x-9 lg:gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] lg:w-[77%]  place-items-center  gap-y-6 gap-x-9 lg:gap-y-16">
             {works.map((work, index) => {
               return (
                 <Flipper flipKey={index} className="w-full h-full">
