@@ -13,7 +13,7 @@ const Services = () => {
       <Features/>
       <FeaturesServices/>
       <BookAppointment/>
-      <UIDesigning/>
+      
       
       
     </>
