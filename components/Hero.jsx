@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Link from "next/link"
+
 
 
 const Hero = () => {
@@ -12,8 +14,10 @@ const Hero = () => {
         </div>
         <div className=' ps-3 '>
             <h1 className='font-bold text-[26px] lg:text-[40px]'>we focus on quality rather than quantity</h1>
-            <p className='mt-10  w-[70%] lg:text-[18px] text-[#e2e8f0] '>When passion meet profession, an amazing result <br className=' hidden lg:block' /> generated</p>
+            <p className='mt-10  w-[70%] lg:text-[18px] text-[#e2e8f0] '>When passion meet profession, an amazing result generated</p>
+            <Link href='/About'>
             <button className=' mt-10 bg-red text-[16px] font-semibold uppercase px-10 py-4' >Read more</button>
+            </Link>
         </div>
        
         
