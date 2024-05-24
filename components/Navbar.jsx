@@ -6,9 +6,6 @@ import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
   FaBars,
 } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
@@ -66,7 +63,7 @@ const Navbar = () => {
       {/* Section 2: Logo, Address, Mail, and Location */}
       <div className=" w-[80%] mx-auto  pt-2 hidden lg:block">
         <div className="container mx-auto flex justify-between items-end">
-          <Link href="#" className="text-2xl font-bold">
+          <Link href="/" className="text-2xl font-bold">
             <img
               src="./assets/asd.png"
               className=" px-2 w-[138px]"
@@ -137,13 +134,13 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            {/* <Link
-              href="/services"
-              className={getLinkClass("/services")}
-              onClick={() => handleLinkClick("/services")}
+            <Link
+              href="/Services"
+              className={getLinkClass("/Services")}
+              onClick={() => handleLinkClick("/Services")}
             >
               Services
-            </Link> */}
+            </Link>
             <Link
               href="/LifeAtViva"
               className={getLinkClass("/LifeAtViva")}
@@ -206,13 +203,13 @@ const Navbar = () => {
           >
             About Us
           </Link>
-          {/* <Link
-            href="/services"
-            className={getLinkClass("/services")}
-            onClick={() => handleLinkClick("/services")}
+          <Link
+            href="/Services"
+            className={getLinkClass("/Services")}
+            onClick={() => handleLinkClick("/Services")}
           >
             Services
-          </Link> */}
+          </Link>
           <Link
             href="/LifeAtViva"
             className={getLinkClass("/LifeAtViva")}

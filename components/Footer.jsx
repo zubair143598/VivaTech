@@ -13,7 +13,7 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer_bg text-white">
-    <div className=" grid grid-cols-1 lg:grid-cols-4 pt-[54px] px-4 lg:px-[12rem]">
+    <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pt-[54px] mx-auto px-4 lg:w-[77%]">
       <div>
         <ul className=" ">
           <li>
@@ -25,8 +25,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className=""></div>
-      <div className=" lg:mt-0 mt-10">
+      <div className=" md:hidden lg:block "></div>
+      <div className=" lg:mt-0  mt-10">
         <ul className="text-[#9D9D9D]">
           <li>
             <h5 className=" text-[26px] text-white font-bold">Official info:</h5>

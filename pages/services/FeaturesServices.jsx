@@ -7,7 +7,7 @@ import { FaObjectGroup } from "react-icons/fa";
 import Link from "next/link";
 import { Flipper, Flipped } from "react-flip-toolkit";
 
-const Services = () => {
+const FeaturesServices = () => {
   const works = [
     {
       icon: <BsPencilSquare className=" text-[43px] " />,
@@ -16,7 +16,7 @@ const Services = () => {
         "Enhancing app store visibility to reach millions of users amidst intense competition, securing prime positions and top ratings.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-      readMore: "/",
+      readMore: "/services/Aso",
     },
     {
       icon: <IoMdRocket className=" text-[43px] " />,
@@ -25,7 +25,7 @@ const Services = () => {
         "We strive to maximize user acquisition through effective app marketing strategies.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-      readMore: "/",
+      readMore: "/services/Marketing",
     },
     {
       icon: <IoMdRocket className=" text-[43px] " />,
@@ -34,7 +34,7 @@ const Services = () => {
         "Android mobile application publishing is a vast field .there are many stores to publish app & acquire users.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-      readMore: "/",
+      readMore: "/services/Publishing",
     },
     {
       icon: <FaRegFileCode className=" text-[43px] " />,
@@ -43,7 +43,7 @@ const Services = () => {
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-      readMore: "/",
+      readMore: "/services/AppDevelopment ",
     },
     {
       icon: <FaObjectGroup className=" text-[43px] " />,
@@ -52,7 +52,7 @@ const Services = () => {
         "Our research strengthens us to provide a seamless user experience with eye-catching user interface.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-      readMore: "/",
+      readMore: "/services/UIDesigning",
     },
     {
       icon: <BsPencilSquare className=" text-[43px] " />,
@@ -61,13 +61,13 @@ const Services = () => {
         "You need to find an app monetization strategy that works for you and work better for free apps.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-      readMore: "/",
+      readMore: "/services/AppPlanning ",
     },
   ];
 
   return (
     <>
-      <div className=" bg-[#EEEDEB] py-[7rem]">
+      <div className=" servicesBg bg-[#EEEDEB] py-[7rem]">
         <div className=" text-red flex justify-center">
           <hr className="bg-red mt-3 h-[3px] border-none w-[60px]" />
           <p className="font-bold tracking-wider uppercase lg:text-[20px] mx-3">
@@ -140,9 +140,9 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[#F5F3F0] py-[100px]"></div>
+      
     </>
   );
 };
 
-export default Services;
+export default FeaturesServices;
