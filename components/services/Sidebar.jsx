@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MdMail, MdOutlineAccessTimeFilled } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 export const menuItems = [
   { name: "Apps Development", link: "/services/AppDevelopment" },
@@ -12,11 +13,14 @@ export const menuItems = [
   { name: "Publishing", link: "/services/Publishing" },
 ];
 const Sidebar = () => {
+
+ const pathName = usePathname()
+
   return (
     <div className="flex flex-col lg:w-[22.4rem] bg-white py-8 px-6">
       <ul className="space-y-4">
         {menuItems.map((item) => (
-          <li key={item.link} className="mb-2 hover:bg-red hover:text-white text-black bg-[#F5F3F0]">
+          <li key={item.link} className={` ${pathName=== item.link ?" bg-red text-white":" "} mb-2 hover:bg-red hover:text-white text-black bg-[#F5F3F0]`}>
             <Link className="" href={item.link}>
               <p className="text-[20px] p-3">{item.name}</p>
             </Link>
