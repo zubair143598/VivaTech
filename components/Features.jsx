@@ -175,8 +175,8 @@ const Features = () => {
           </p>
         </div>
       </div>
-      <div className="gap-x-5 lg:gap-y-0 gap-y-10 mb-[7rem] translate-y-[5rem] lg:flex-row flex-col flex w-[90%] lg:w-[90%] xl:w-[77%]">
-        <div className="group hover:translate-y-5 translate-y-[3rem] w-full lg:w-[50%] transition-all duration-500">
+      <div className="gap-x-5 lg:gap-y-0 gap-y-10  translate-y-[5rem] lg:flex-row flex-col flex w-[90%] lg:w-[90%] xl:w-[77%]">
+        <div className="group hover:translate-y-5 lg:mb-[7rem] lg:hover:mb-[5rem] translate-y-[3rem] w-full lg:w-[50%] transition-all duration-500">
           <div className="relative lg:h-[34rem] lg:hover:h-[36rem] md:h-[41rem] md:hover:h-[43rem]  sm:h-[35rem] hover:sm:h-[37rem] h-[31rem]  hover:h-[33rem]   hover:shadow-2xl rounded-2xl transition-all duration-500">
             <div className="relative">
               <img
@@ -200,7 +200,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="group hover:translate-y-5 translate-y-[3rem] lg:w-[50%] transition-all duration-500">
+        <div className="group hover:translate-y-5 mb-[7rem] hover:mb-[5rem] translate-y-[3rem] lg:w-[50%] transition-all duration-500">
           <div className="relative lg:h-[35.5rem] lg:hover:h-[37.5rem] md:h-[41rem] md:hover:h-[43rem]  sm:h-[35rem] hover:sm:h-[37rem] h-[31rem]  hover:h-[33rem]   hover:shadow-2xl rounded-2xl transition-all duration-500">
             <div className="relative">
               <img
