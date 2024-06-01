@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 
 const AppDevelopment = () => {
@@ -5,18 +6,48 @@ const AppDevelopment = () => {
     <div className="p-4 h-full bg-white">
       <div className="py-[28px] px-[14px]">
         <img src="../assets/services.png" className="mx-auto " alt="services" />
-        <p className=" leading-[30px]">
-          As a app web crawler expert, I help organizations adjust to the
-          expanding significance of internet promoting. or lipsum as it is
-          sometimes known, is dummy text used in laying out print, grap or web
-          designs. USA champions professionalism in the cleaning industry by
-          providing top-quality cleaning and related services that meet and
-          exceed the expectations of today’s demanding corporate, office and
-          ware house clients…courteously, responsively. Lorem ipsum dolor sit
-          amet, consectetur adipisicing elitm sed do eiusmod tempor incididunt
-          labore ets magna aliquatenim minim veniam quis nostrud exercitation
-          ullamco laboris nisut aliquip.
-        </p>
+        <div className=" leading-[30px] space-y-4">
+          <p>
+          Our app development services are designed to bring your ideas to life and create exceptional applications that resonate with your target audience. Whether you're looking to develop a productivity tool, a gaming app, or anything in between, our experienced team is dedicated to delivering top-notch solutions that exceed your expectations.
+          </p>
+          <p>
+            {" "}
+            <span className=" text-[18px] font-bold">
+            Consultation and Planning:{" "}
+            </span>{" "}
+            We start by understanding your vision and goals for the app, conducting thorough research to ensure we're aligned with your objectives.
+          </p>
+          <p>
+            {" "}
+            <span className=" text-[18px] font-bold">
+            Custom Development: {" "}
+            </span>{" "}
+            Our team of skilled developers utilizes the latest technologies and best practices to build custom solutions tailored to your unique requirements.
+          </p>
+          <p>
+            {" "}
+            <span className=" text-[18px] font-bold">
+            User-Centric Design: {" "}
+            </span>{" "}
+            We prioritize user experience and interface design to create intuitive and engaging applications that keep users coming back for more.
+          </p>
+          <p>
+            {" "}
+            <span className=" text-[18px] font-bold">
+            Quality Assurance:{" "}
+            </span>{" "}
+            Rigorous testing procedures are implemented throughout the development process to ensure the app performs flawlessly across different devices and platforms.
+          </p>
+          <p>
+            {" "}
+            <span className=" text-[18px] font-bold">
+            Deployment and Support:{" "}
+            </span>{" "}
+            Once the app is ready, we handle the deployment process and provide ongoing support to address any issues and ensure smooth operation.
+          </p>
+         
+         
+        </div>
       </div>
     </div>
   );

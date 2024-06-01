@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-key */
-import React from "react";
+import React, { useRef } from "react";
 import { BsPencilSquare } from "react-icons/bs";
 import { IoMdRocket } from "react-icons/io";
 import { FaRegFileCode } from "react-icons/fa";
 import { FaObjectGroup } from "react-icons/fa";
 import Link from "next/link";
 import { Flipper, Flipped } from "react-flip-toolkit";
+import { motion, useInView } from "framer-motion";
 
 const FeaturesServices = () => {
   const works = [
@@ -13,11 +14,10 @@ const FeaturesServices = () => {
       icon: <BsPencilSquare className=" text-[43px] " />,
       title: "ASO",
       Description:
-        "Enhancing app store visibility to reach millions of users amidst intense competition, securing prime positions and top ratings.",
+        "Make your app shine in a crowded marketplace. We ensure your app gets noticed by the right users and secures top positions and ratings.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-        readMore: "/services/Aso",
-
+      readMore: "/services/Aso",
     },
     {
       icon: <IoMdRocket className=" text-[43px] " />,
@@ -26,60 +26,91 @@ const FeaturesServices = () => {
         "We strive to maximize user acquisition through effective app marketing strategies.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-        readMore: "/services/Marketing",
+      readMore: "/services/Marketing",
     },
     {
       icon: <IoMdRocket className=" text-[43px] " />,
       title: "Publishing",
       Description:
-        "Android mobile application publishing is a vast field .there are many stores to publish app & acquire users.",
+        "Publishing Android apps involves many stores for reaching and acquiring users.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-        readMore: "/services/Publishing",
+      readMore: "/services/Publishing",
     },
     {
       icon: <FaRegFileCode className=" text-[43px] " />,
       title: "Apps Development",
       Description:
-        "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
+        "Building great apps for smart users, ensuring they stay hooked.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-        readMore: "/services/AppDevelopment ",
+      readMore: "/services/AppDevelopment ",
     },
     {
       icon: <FaObjectGroup className=" text-[43px] " />,
       title: "UI/UX Designing",
       Description:
-        "Our research strengthens us to provide a seamless user experience with eye-catching user interface.",
+        ": Extensive research enables us to provide a seamless user experience with a stunning interface.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-        readMore: "/services/UIDesigning",
+      readMore: "/services/UIDesigning",
     },
     {
       icon: <BsPencilSquare className=" text-[43px] " />,
       title: "App Planning and Monetization",
       Description:
-        "You need to find an app monetization strategy that works for you and work better for free apps.",
+        "Discover the perfect app monetization strategy tailored to your needs, especially for free apps.",
       description2:
         "App store optimization to reach targeted users in millions of app competitors, and to secure the best position and ratings.",
-        readMore: "/services/AppPlanning ",
+      readMore: "/services/AppPlanning ",
     },
   ];
+
+  const title = ["We", "provide", "comprehensive", "solutions"];
+  const baseDuration = 0.5;
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <>
       <div className=" bg-[#EEEDEB] py-[7rem]">
         <div className=" text-red flex justify-center">
           <hr className="bg-red mt-3 h-[3px] border-none w-[60px]" />
-          <p className="font-bold tracking-wider uppercase lg:text-[20px] mx-3">
+          <p className="font-semibold tracking-wider uppercase lg:text-[18px] mx-3">
             FEATURED SERVICES
           </p>
           <hr className="bg-red mt-3 h-[3px] border-none w-[60px]" />
         </div>
         <div className=" flex items-center gap-y-4 mb-10 text-center flex-col">
-          <h2 className=" text-[32px] lg:text-[40px] lg:font-serif font-extrabold">
-            We provide comprehensive solutions!
-          </h2>
+          <div className=" flex space-x-4">
+            {title.map((val, index) => {
+              const currentDuration = baseDuration + index * 0.2;
+              const currentDelay = index * 0.3;
+              return (
+                <motion.h2
+                  ref={ref}
+                  initial={{
+                    y: 50,
+                    opacity: 0,
+                  }}
+                  animate={
+                    isInView
+                      ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 }
+                      : {}
+                  }
+                  transition={{
+                    duration: currentDuration,
+                    delay: currentDelay,
+                  }}
+                  key={index}
+                  className=" text-[32px] lg:text-[40px] lg:font-serif font-extrabold"
+                >
+                  {val}
+                </motion.h2>
+              );
+            })}
+          </div>
+
           <p className="font-serif lg:text-[20px] text-[18px] lg:w-[45%] ms-5">
             Our services ensure that users have the appropriate view and access
             permissions to manage requests, problems, changes, contracts,
@@ -87,7 +118,20 @@ const FeaturesServices = () => {
           </p>
         </div>
         <div className=" flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] lg:w-[77%]  place-items-center  gap-y-6 gap-x-9 lg:gap-y-16">
+          <motion.div
+            ref={ref}
+            initial={{
+              y: 100,
+              opacity: 0,
+            }}
+            animate={
+              isInView ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 } : {}
+            }
+            transition={{
+              duration: 1.5,
+            }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] lg:w-[77%]  place-items-center  gap-y-6 gap-x-9 lg:gap-y-16"
+          >
             {works.map((work, index) => {
               return (
                 <Flipper key={index} flipKey={index} className="w-full h-full">
@@ -138,7 +182,7 @@ const FeaturesServices = () => {
                 </Flipper>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className=" bg-[#F5F3F0] py-[100px]"></div>

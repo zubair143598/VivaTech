@@ -1,26 +1,14 @@
-import { userSchema } from "@/src/schemas";
-import { useFormik } from "formik";
-import React from "react";
-import { FaPlus } from "react-icons/fa";
-
-const initialValues = {
-  name: "",
-  email: "",
-  phone: "",
-  message: "",
-};
+import { motion, useInView } from "framer-motion";
+import Form from "./Form";
+import { useRef } from "react";
 
 const InTouch = () => {
 
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
-    useFormik({
-      initialValues: initialValues,
-      validationSchema: userSchema,
-      onSubmit: (values, action) => {
-  console.log(values);
-  action.resetForm()
-      },
-    });
+  const appointment = [' Book' ,'an' ,'Appointment']
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const baseDuration = 0.5;
 
   return (
     <div className=" flex justify-center my-[7rem]">
@@ -33,89 +21,66 @@ const InTouch = () => {
             </p>
           </div>
           <div>
-            <h2 className=" font-bold text-[34px] lg:text-[40px]">ABOUT US</h2>
+            <motion.h2
+              ref={ref}
+              initial={{
+                y: 50,
+                opacity: 0,
+              }}
+              animate={
+                isInView ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 } : {}
+              }
+              transition={{
+                duration: 2,
+              }}
+              className=" font-bold text-[34px] lg:text-[40px]"
+            >
+              ABOUT US
+            </motion.h2>
             <p className="text-[20px] lg:pe-5 mt-10">
-            VivaTech Solutions Pvt Ltd, founded in 2017, is a Dubai-based company specializing in cutting-edge mobile applications, digital marketing, web development, ASO, and app development. We prioritize top-tier UI and UX design, ensuring the best experience for our users. Explore our latest features and enhancements as we focus on expanding our core businesses and driving rapid growth.
+              VivaTech Solutions Pvt Ltd, founded in 2017, is a Dubai-based
+              company specializing in cutting-edge mobile applications, digital
+              marketing, web development, ASO, and app development. We
+              prioritize top-tier UI and UX design, ensuring the best experience
+              for our users. Explore our latest features and enhancements as we
+              focus on expanding our core businesses and driving rapid growth.
             </p>
           </div>
         </div>
         <div>
           <p className="text-[20px] mt-10 lg:mt-0 pe-4">
-          We value simplicity and effective communication in all our endeavors
+            We value simplicity and effective communication in all our endeavors
           </p>
-          <h2 className=" lg:text-[36px] text-[26px] mt-12  font-semibold">
-            Book an Appointment
-          </h2>
+          <div className=" flex space-x-3">
 
-          <form onSubmit={handleSubmit} className=" mt-4" action="">
-            <div className="flex flex-col lg:flex-row gap-x-5">
-              <div>
-                <label className=" text-[18px]" htmlFor="Name">Full name*</label>
-                <br />
-                <input
-                  placeholder="Name"
-                  type="text"
-                  className="p-[6px] w-full mt-2 focus:outline-red px-5 bg-[#eceeef] border-[1px] rounded  hover:border-red"
-                  name="name"
-                  id="Name"
-                  onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.name}
-                />
-                {errors.name && touched.name ? (
-                <p className=" text-[14px]  text-red ">*{errors.name}</p>
-              ) : null}
-              </div>
-              <div className=" lg:mt-0 mt-4">
-                <label htmlFor="email">Mail address*</label>
-                <br />
-                <input
-                  placeholder="example@gmail.com"
-                  type="email"
-                  className="p-[6px] w-full mt-3 focus:outline-red px-5 bg-[#eceeef] border-[1px] rounded  hover:border-red"
-                  name="email"
-                  id="email"onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.email}
-                />
-                {errors.email && touched.email ? (
-                  <p className="text-[14px]  text-red ">
-                    *{errors.email}
-                  </p>
-                ) : null}
-              </div>
-            </div>
-            <div className=" mt-3">
-
-            <label className=" text-[18px]" htmlFor="text">Type your message*</label>
-            <br />
-            <textarea
-              rows="5"
-              className="p-[6px] w-full mt-3 focus:outline-red px-5 bg-[#eceeef] border-[1px] rounded  hover:border-red lg:w-[77%]"
-              name="message"
-              id="text"
-              placeholder="Type your message*"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.message}
-            />
-            {errors.message && touched.message ? (
-              <p className="text-[14px]  text-red ">
-                *{errors.message}
-              </p>
-            ) : null}
-              </div>
-            <br />
-            <div className=" group items-center flex">
-              <button
-                className="uppercase font-bold w-full lg:w-[70%] bg-black transition-colors duration-1000  group-hover:bg-red  text-white my-2 py-3"
-                type="submit"
-              >
-                Send Your message
-              </button>
-              <FaPlus className=" py-4 hover:transition-colors duration-1000 group-hover:bg-black text-white bg-red  w-11 h-12 " />
-            </div>
-          </form>
+          {
+            appointment.map((val,index)=>{
+              const currentDuration = baseDuration + index * 0.2
+              const currentDelay = index * 0.3
+              return(
+                <motion.h5
+                initial={{
+                  y: 50,
+                  opacity: 0,
+                }}
+                animate={
+                  isInView ? { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1 } : {}
+                }
+                transition={{
+                  duration: currentDuration,
+                  delay:currentDelay
+                }}
+                key={index}
+                className=" lg:text-[36px] text-[26px] mt-12  font-semibold"
+                >
+            {val}
+          </motion.h5>
+              )
+            })
+          }
+          </div>
+          
+          <Form />
         </div>
       </div>
     </div>

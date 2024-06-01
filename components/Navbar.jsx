@@ -2,15 +2,10 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaBars,
-} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaBars } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
-import { FiPhoneCall,FiMail  } from "react-icons/fi";
-
+import { FiPhoneCall, FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
 import { FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -33,9 +28,7 @@ const Navbar = () => {
   };
 
   const getLinkClass = (path) => {
-    return activePath === path
-      ? "bg-red px-8"
-      : "text-white px-8 hover:bg-red";
+    return activePath === path ? "bg-red px-8" : "text-white px-8 hover:bg-red";
   };
 
   return (
@@ -51,10 +44,10 @@ const Navbar = () => {
               <FaFacebookF size={12} />
             </Link>
             <Link href="#" className="hover:text-gray-400">
-              <FaTwitter size={12}/>
+              <FaTwitter size={12} />
             </Link>
             <Link href="#" className="hover:text-gray-400">
-              <FaLinkedinIn size={12}/>
+              <FaLinkedinIn size={12} />
             </Link>
           </div>
         </div>
@@ -73,33 +66,73 @@ const Navbar = () => {
           <div className="hidden lg:flex ">
             {/* phone */}
             <div className="flex  border-r-2 px-6  border-dashed items-center space-x-2">
-              <div className=" ">
-              <FiPhoneCall  className="  text-red" size={35} />
-              </div>
+              <motion.div
+                whileHover={{
+                  y: [0, -5, 5, -5, 5, 0],
+                  transition: {
+                    duration: 0.5,
+                    repeat: Infinity,
+                    repeatType: "loop"
+                  },
+                }}
+                className=" "
+              >
+                <FiPhoneCall className="  text-red" size={35} />
+              </motion.div>
               <div>
                 <p className=" text-[13px] text-[#5a5a5a]">For Any query</p>
-                <span className=" xl:text-[19px] text-[14px] font-semibold">+92514430962</span>
+                <span className=" xl:text-[19px] text-[14px] font-semibold">
+                  +92514430962
+                </span>
               </div>
             </div>
             {/* mail */}
 
             <div className="flex px-6  border-r-2  border-dashed items-center space-x-2">
-              <div className=" ">
-              <FiMail   className=" text-red" size={35} />
-              </div>
+              <motion.div
+                whileHover={{
+                  y: [0, -5, 5, -5, 5, 0],
+                  transition: {
+                    duration: 0.5,
+                    repeat: Infinity,
+                    repeatType: "loop"
+                  },
+                }}
+                className=" "
+              >
+                <FiMail className=" text-red" size={35} />
+              </motion.div>
               <div>
-                <p className=" text-[13px] text-[#5a5a5a]">hrvivatech@gmail.com</p>
-                <span className=" xl:text-[19px] text-[14px] font-serif font-bold">Mail us</span>
+                <p className=" text-[13px] text-[#5a5a5a]">
+                  hrvivatech@gmail.com
+                </p>
+                <span className=" xl:text-[19px] text-[14px] font-serif font-bold">
+                  Mail us
+                </span>
               </div>
             </div>
             {/* Location */}
             <div className="flex px-6 items-center space-x-2">
-              <div className=" ">
-              <CiLocationOn    className=" text-red" size={40} />
-              </div>
+              <motion.div
+                whileHover={{
+                  y: [0, -5, 5, -5, 5, 0],
+                  transition: {
+                    duration: 0.5,
+                    repeat: Infinity,
+                    repeatType: "loop"
+                  },
+                }}
+                className=" "
+              >
+                <CiLocationOn className=" text-red" size={40} />
+              </motion.div>
               <div>
-                <p className=" text-[13px] text-[#5a5a5a]">Office No. 9N, Alaseel Plaza, I10 Markaz, Islamabad</p>
-                <p className=" xl:text-[19px] text-[14px] font-bold font-serif">Pakistan</p>
+                <p className=" text-[13px] text-[#5a5a5a]">
+                  Office No. 9N, Alaseel Plaza, I10 Markaz, Islamabad
+                </p>
+                <p className=" xl:text-[19px] text-[14px] font-bold font-serif">
+                  Pakistan
+                </p>
               </div>
             </div>
           </div>
@@ -178,7 +211,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center p-4">
           <Link href="/" className="text-2xl font-bold">
-          <img
+            <img
               src="./assets/logo.png"
               className=" px-2 w-[138px]"
               alt="logo"

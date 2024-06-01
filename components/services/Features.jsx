@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef } from "react";
-import { FaRegClipboard } from "react-icons/fa";
-import { IoIosBicycle } from "react-icons/io";
 import { motion, useInView } from "framer-motion";
 
 const Features = () => {

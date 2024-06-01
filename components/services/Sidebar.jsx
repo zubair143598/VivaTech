@@ -17,7 +17,7 @@ const Sidebar = () => {
  const pathName = usePathname()
 
   return (
-    <div className="flex flex-col lg:w-[22.4rem] bg-white py-8 px-6">
+    <div className="flex flex-col lg:w-[22.4rem] h-[100%] bg-white py-8 px-6">
       <ul className="space-y-4">
         {menuItems.map((item) => (
           <li key={item.link} className={` ${pathName=== item.link ?" bg-red text-white":" "} mb-2 hover:bg-red hover:text-white text-black bg-[#F5F3F0]`}>
