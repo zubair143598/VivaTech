@@ -73,6 +73,7 @@ const Message = () => {
             </p>
           </div>
         </div>
+
         <motion.div
           ref={ref}
           initial={{
@@ -85,7 +86,7 @@ const Message = () => {
           transition={{
             duration: 1.5,
           }}
-          className=" lg:w-[40%] px-2 lg:px-5 relative"
+          className=" lg:w-[40%] content-center px-2 lg:px-5 relative"
         >
           <img
             className=" rounded-lg w-[95%] lg:w-[550px] "
