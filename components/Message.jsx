@@ -77,7 +77,7 @@ const Message = () => {
         <motion.div
           ref={ref}
           initial={{
-            x: 100,
+            x: -100,
             opacity: 0,
           }}
           animate={

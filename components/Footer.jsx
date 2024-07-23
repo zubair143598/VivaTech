@@ -17,7 +17,7 @@ const Footer = () => {
       <div>
         <ul className=" ">
           <li>
-            <img className=" w-[150px]" src="./assets/logo.png" alt="logo" />
+            <img className=" w-[150px]" src="./assets/logo_white.png" alt="logo" />
           </li>
           <li className="text-[#9D9D9D] py-8  text-[20px]"> Quality over quantity is our priority.</li>
           <li>

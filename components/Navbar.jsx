@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-end">
           <Link href="/" className="text-2xl font-bold">
             <img
-              src="./assets/asd.png"
+              src="./assets/logo.png"
               className=" px-2 w-[138px]"
               alt="logo"
             />

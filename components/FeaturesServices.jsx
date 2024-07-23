@@ -82,7 +82,7 @@ const FeaturesServices = () => {
           <hr className="bg-red mt-3 h-[3px] border-none w-[60px]" />
         </div>
         <div className=" flex items-center gap-y-4 mb-10 text-center flex-col">
-          <div className=" flex space-x-4">
+          <div className=" flex space-x-2 lg:space-x-4">
             {title.map((val, index) => {
               const currentDuration = baseDuration + index * 0.2;
               const currentDelay = index * 0.3;
@@ -103,7 +103,7 @@ const FeaturesServices = () => {
                     delay: currentDelay,
                   }}
                   key={index}
-                  className=" text-[32px] lg:text-[40px] lg:font-serif font-extrabold"
+                  className=" text-[17px] lg:text-[40px] lg:font-serif font-extrabold"
                 >
                   {val}
                 </motion.h2>

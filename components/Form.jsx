@@ -18,8 +18,7 @@ const Form = () => {
       validationSchema: userSchema,
       onSubmit: async (values, action) => {
         try {
-          // const response = await fetch(process.env.NEXT_PUBLIC_API_URL,
-          const response = await fetch('https://viva-tech-backend.vercel.app/', {
+          const response = await fetch(process.env.NEXT_PUBLIC_API_URL, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
